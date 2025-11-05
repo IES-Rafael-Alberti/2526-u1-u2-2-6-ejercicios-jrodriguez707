@@ -41,9 +41,9 @@ def calcular_imc(peso: float, altura: float) -> tuple[float, str]:
     categoria = ""
     if imc < 18.5:
         categoria = "Bajo peso"
-    elif 18.5 <= imc < 25:
+    elif imc < 25:
         categoria = "Normal"
-    elif 25 <= imc < 30:
+    elif imc < 30:
         categoria = "Sobrepeso"
     else:
         categoria = "Obesidad"
